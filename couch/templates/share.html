@@ -1,0 +1,304 @@
+<html>
+<head>
+	<meta charset="utf-8">
+    <title>Couch - Your DVR for the web</title>
+    <meta id="viewport" name="viewport" content ="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta property="og:image" content="http://addtocouch.com/couch_cushion_128_transparentbg.png"/>
+    <meta name="description" content="Your DVR for the web.">
+    <link rel="icon" type="image/png" href="img/favicon.ico">
+<style>
+   iframe {
+	     position: absolute;
+	     height:514px;
+	     width: 860px;
+	     border: none;
+	   }
+	body {
+		background: #d7d7d7;
+		margin:0px;
+		font-family:'helvetica',arial,san-serif;
+	}
+	#topbar { 
+		background-image:url('http://addtocouch.com/web_top_bar_2048x10.png');
+		background-size:100%;
+		height:10px;
+		width:100%;
+	}
+
+	#bottombar {
+		background-image:url('http://addtocouch.com/web_bottom_bar_2048x10.png');
+		background-size:100%;
+		height:10px;
+		width:100%;
+		bottom:0px;
+		position:fixed;
+		z-index: 150;
+		_position:absolute;
+		_top:expression(eval(document.documentElement.scrollTop+
+        (document.documentElement.clientHeight-this.offsetHeight)));
+	}
+
+	#main {
+		width:860px;
+		margin-right:auto;
+		margin-left:auto;
+	}
+
+	#topinfo {
+		margin-top:20px;
+		margin-bottom:20px;
+		height:100px;
+	}
+
+	#couchlogo{
+		float:left;
+		background-image:url('http://addtocouch.com/couch_cushion_128_transparentbg.png');
+		background-size: cover;
+		width:100px;
+		height:100px;
+	}
+	#watchedform {
+		float:left;
+		margin-left:20px;
+	}
+	#watchedon {
+		background-image:url('http://addtocouch.com/watchedoncouch.png');
+		background-size: cover;
+		width:120px;
+		height:44px;
+		
+	}
+
+	#emailcollect {
+		margin-top:12px;
+	}
+
+	#userinfo {
+		float: right;
+	}
+
+	#userinfo_inner {
+		margin-left:20px;
+		margin-top:50px;
+		text-align:right;
+	}
+
+	#user_name {
+		float:right;
+		font-size:24pt;
+		margin-top: 40px;
+		color:#333;
+		font-weight:bold;
+	}
+
+	#twitter_name {
+		font-size:12pt;
+		font-weight:300;
+		letter-spacing: .06em;
+	    margin-top:16px;
+		margin-left:-10px;
+		margin-right:10px;
+		float:right;
+		text-align:right;
+	}
+
+	#photo {
+		float:right;
+		background-image:url('https://api.twitter.com/1/users/profile_image?screen_name={{user}}');
+	    background-repeat:no-repeat;
+		height:50px;
+		width:50px;
+		margin-bottom:10px;
+
+	}
+
+	#video {
+		width:860px;
+		height:514px;
+		margin-top:20px;
+	}
+
+	#bottominfo {
+		font-weight:bold;
+		font-size:30px;
+		margin-top:20px;
+		color:#111;
+	}
+
+	form input {
+		height:44px;
+		width:260px;
+		font-size:16px;
+		border:2px solid #dadada;
+	    padding:5px;
+	}
+
+	form input:focus {
+		outline: none;
+		box-shadow:inset 0 0 2px 2px #00c200;
+	}
+
+	form button {
+		background: #00c200;
+		border: none;
+		height:40px;
+		margin-left:-6px;
+		color: #ffffff;
+		font-size: 16px;
+		letter-spacing: 1px;
+		padding: 7px 25px;
+	}
+
+	.thank-you {
+		width:260px;
+		color: #00c200; 
+		border: 2px solid #00c200; 
+		padding: 10px; 
+		text-align:center;
+	}
+
+
+@media (max-width:767px) {
+	iframe {
+     position: absolute;
+     height:260px;
+     width: 100%;
+     border: none;
+   }
+   #main {
+   	width:100%;
+   	margin-right:auto;
+	margin-left:auto;
+   }
+   #couchlogo{
+		float:left;
+		background-image:url('http://addtocouch.com/couch_cushion_128_transparentbg.png');
+		background-size: cover;
+		width:100px;
+		height:100px;
+		margin-left:5px;
+	}
+	#watchedform {
+		float:left;
+		margin-left:5px;
+	}
+	#watchedon {
+		background-image:url('http://addtocouch.com/watchedoncouch.png');
+		background-size: cover;
+		width:120px;
+		height:44px;
+		
+	}
+	/*
+   #twitter_name {
+   	font-size:8px;
+   	margin-top:30px;
+   }
+   #userinfo_inner {
+   	margin-top: 15px;
+   }
+   */
+   #userinfo {
+   	display:none;
+   }
+   #topinfo {
+   	xxheight:65px;
+   }
+   #video {
+   	width:100%;
+   	height:260px;
+   }
+   #photo {
+   	margin-top:3px;
+   }
+   form input {
+		height:44px;
+		width:140px;
+		font-size:14px;
+		border:2px solid #dadada;
+	    padding:5px;
+	}
+
+	form input:focus {
+		outline: none;
+		box-shadow:inset 0 0 2px 2px #00c200;
+	}
+
+	form button {
+		background: #00c200;
+		border: none;
+		height:40px;
+		margin-left:-6px;
+		color: #ffffff;
+		font-size: 14px;
+		letter-spacing: 1px;
+		padding: 7px 8px;
+	}
+	.thank-you {
+		width:170px;
+		font-size:14px;
+	}
+}
+</style>
+</head>
+<body>
+	<div id="topbar">
+	</div>
+	<div id="main">
+		<div id="topinfo">
+			<div id="lefttopinfo">
+				<a href="http://addtocouch.com"><div id="couchlogo"></div></a>
+				<div id="watchedform">
+					<div id="watchedon"></div>
+					<div id="emailcollect">
+						<form id="couchemail" method="post" action="https://script.google.com/macros/s/AKfycbzpsA_Q36C8LlzFoCsoL6mnYQ_FmCdOLW-2YClBVlqfG6kmlCk/exec" target="hidden_iframe">
+							<input type="email" name="email" placeholder="Reserve your seat">
+							<button type="submit" onClick="signUpCouch();">Submit</button>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div id="userinfo">
+				<div id="userinfo_inner">
+
+				<div id="avatar">
+					<div id="photo"></div>
+				  <div id="twitter_name">@{{user}}</div>
+				</div>
+
+				</div>
+			</div>
+		</div>
+		<div id="video">
+                  <iframe title="Couch"  src="{{link}}?wmmode=transparent" frameborder="0" allowfullscreen></iframe>
+		</div>
+		<div id="bottominfo">
+                  {{title}} 
+		</div>
+	</div>
+	<div id="bottombar">
+	</div>
+	<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
+	<script type="text/javascript">
+		function signUpCouch(){
+			document.getElementById("emailcollect").innerHTML = "<div class='thank-you' style=''> Thanks! We'll be in touch :) </div>"
+			document.getElementById("couchemail").submit();
+			return false;
+		}
+	</script>
+	<script type="text/javascript">
+
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-39104328-1']);
+	  _gaq.push(['_setDomainName', 'addtocouch.com']);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+
+	</script>
+</body>
+</html>

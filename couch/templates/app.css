@@ -1,0 +1,82 @@
+body {
+	background: #d7d7d7;
+	margin:0px;
+	font-family:'helvetica',arial,san-serif;
+}
+#topbar { 
+	background-image:url('web_top_bar_2048x10.png');
+	background-size:100%;
+	height:10px;
+	width:100%;
+}
+
+#bottombar {
+	background-image:url('web_bottom_bar_2048x10.png');
+	background-size:100%;
+	height:10px;
+	width:100%;
+	position:absolute;
+	bottom:0px;
+}
+
+#main {
+	width:860px;
+	margin-right:auto;
+	margin-left:auto;
+}
+
+#topinfo {
+	margin-top:20px;
+	margin-bottom:20px;
+	height:100px;
+}
+
+#couchlogo{
+	float:left;
+}
+
+#userinfo {
+	float: right;
+}
+
+#userinfo_inner {
+	float:right;
+}
+
+#user_name {
+	float:right;
+	font-size:24pt;
+	margin-top: 40px;
+	color:#333;
+	font-weight:bold;
+}
+
+#twitter_name {
+	xxfloat:right;
+	font-size:14pt;
+	color:#00aced;
+	text-align:right;
+
+}
+
+#avatar {
+	float:right;
+	background-image:url('avatar.png');
+	height:100px;
+	width:100px;
+	margin-left:10px;
+}
+
+#video {
+	width:860px;
+	height:514px;
+	background-color:#333;
+	margin-top:20px;
+}
+
+#bottominfo {
+	font-weight:bold;
+	font-size:30px;
+	margin-top:20px;
+	color:#111;
+}
