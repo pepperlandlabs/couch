@@ -1,7 +1,8 @@
 {
-  "name": "nko4-extra-hand-sanitzer",
-  "version": "0.1.0",
-  "description": "Extra Hand Sanitzer",
+  "name": "chaise",
+  "version": "0.1.1",
+  "private": true,
+  "description": "node.js twitter service for addtocouch.com",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
@@ -14,9 +15,9 @@
   "dependencies": {
     "nko": "*",
     "immortal-ntwitter": "git://github.com/horixon/immortal-ntwitter.git#master",
-    "goinstant-rest": "*",
-    "lodash": "*",
-    "restify": "*",
+    "goinstant-rest": "~1.0.0",
+    "lodash": "~2.3.0",
+    "restify": "~2.6.0",
     "winston": "*",
     "youtube-feeds": "~2.2.1"
   },
