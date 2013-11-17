@@ -1,0 +1,25 @@
+{
+  "name": "nko4-extra-hand-sanitzer",
+  "version": "0.1.0",
+  "description": "Extra Hand Sanitzer",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:nko4/extra-hand-sanitzer.git"
+  },
+  "dependencies": {
+    "nko": "*",
+    "immortal-ntwitter": "git://github.com/horixon/immortal-ntwitter.git#master",
+    "goinstant-rest": "*",
+    "lodash": "*",
+    "restify": "*",
+    "winston": "*",
+    "youtube-feeds": "~2.2.1"
+  },
+  "engines": {
+    "node": "0.10.x"
+  }
+}

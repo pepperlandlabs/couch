@@ -1,5 +1,0 @@
-[Error: /home/rich/dev/a2c/node_modules/restify/node_modules/dtrace-provider/DTraceProviderBindings.node: invalid ELF header]
-a2c listening at http://0.0.0.0:8889
-[Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED]
-[Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED]
-[Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED]

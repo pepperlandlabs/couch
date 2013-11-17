@@ -1,1 +1,0 @@
-START root=node(0) MATCH root-[rp:person]->item RETURN item
