@@ -1,7 +1,7 @@
 chaise
 ===
 
-# The node.js backend for couch. Yu huh.
+The node.js twitter listener service for couch. Yu huh.
 
 ## Requirements
 
