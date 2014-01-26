@@ -14,13 +14,17 @@ The node.js twitter listener service for couch. Yu huh.
     $ npm start
 ```
 
+# SSH Access
+
+`ssh -i <your AWS key file> ubuntu@54.200.49.88`
+
 # Deploying
 
 This app uses dokku on an ec2 instance. You'll need to have key permissions to push. Pushing works just like Heroku:
 
 Add the git remote repo:
 ```
-   $ git remote add aws dokku@ec2-54-201-2-181.us-west-2.compute.amazonaws.com:couch
+   $ git remote add aws dokku@54.200.49.88:couch
 ```
 
 Then push the branch:
