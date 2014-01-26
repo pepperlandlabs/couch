@@ -16,9 +16,9 @@ The node.js twitter listener service for couch. Yu huh.
 
 # SSH Access
 
-The following instructions assume assumes the EC2 instance IP is `54.200.49.88`.
+The following instructions assume assumes the EC2 instance is at `admin.addtocouch`.
 
-`ssh -i <your AWS key file> ubuntu@54.200.49.88`
+`ssh -i <your AWS key file> ubuntu@admin.addtocouch.com`
 
 # Deploying
 
@@ -26,7 +26,7 @@ This app uses dokku on an ec2 instance (app name: `couch`). You'll need to have 
 
 Add the git remote repo:
 ```
-   $ git remote add aws dokku@54.200.49.88:couch
+   $ git remote add aws dokku@admin.addtocouch.com:couch
 ```
 
 Then push the branch:
