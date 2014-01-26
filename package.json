@@ -1,6 +1,6 @@
 {
   "name": "chaise",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "private": true,
   "description": "node.js twitter service for addtocouch.com",
   "main": "server.js",
@@ -14,10 +14,13 @@
   },
   "dependencies": {
     "immortal-ntwitter": "git://github.com/horixon/immortal-ntwitter.git#master",
-    "goinstant-rest": "~1.0.0",
+    "goinstant-rest": "~1.2.1",
+    "underscore": "*",
     "lodash": "~2.3.0",
     "restify": "~2.6.0",
     "winston": "*",
+    "jade": "*",
+    "moment": "~2.5.1",
     "youtube-feeds": "~2.2.1"
   },
   "devDependencies": {
