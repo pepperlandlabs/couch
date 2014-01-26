@@ -16,11 +16,13 @@ The node.js twitter listener service for couch. Yu huh.
 
 # SSH Access
 
+The following instructions assume assumes the EC2 instance IP is `54.200.49.88`.
+
 `ssh -i <your AWS key file> ubuntu@54.200.49.88`
 
 # Deploying
 
-This app uses dokku on an ec2 instance. You'll need to have key permissions to push. Pushing works just like Heroku:
+This app uses dokku on an ec2 instance (app name: `couch`). You'll need to have key permissions to push. Pushing works just like Heroku:
 
 Add the git remote repo:
 ```
@@ -32,5 +34,12 @@ Then push the branch:
 ```
    $ git push aws master
 ```
+
+# Debugging
+
+SSH into the server. Then use `dokku` to access the node-js app container.
+
+To get logs, for example: `dokku logs couch`
+
 
 Voila!
